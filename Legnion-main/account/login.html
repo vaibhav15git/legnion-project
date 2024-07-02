@@ -1,0 +1,1514 @@
+<!doctype html><html
+  class="t4sp-theme t4s-wrapper__full_width rtl_false swatch_color_style_2 pr_border_style_1 pr_img_effect_2 enable_eff_img1_true badge_shape_2 css_for_wis_app_true shadow_round_img_false t4s-header__inline is-remove-unavai-2 t4_compare_false is-catalog__mode-false
+ no-js"
+  lang="en"
+  >
+  
+<!-- Mirrored from www.ugreen.com/account/login by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jun 2024 12:11:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="#fff">
+    <link rel="canonical" href="login.html">
+    <link
+      rel="preconnect"
+      href="https://cdn.shopify.com/"
+      crossorigin>
+    
+    
+    <link
+        rel="shortcut icon"
+        type="image/png"
+        href="../cdn/shop/files/favicon_08b0ce1e-0628-47b5-a97c-c9159ec60ed8b204.png?v=1703750438&amp;width=32"><link
+        rel="apple-touch-icon-precomposed"
+        type="image/png"
+        sizes="152x152"
+        href="../cdn/shop/files/512_512_83f05a1c-d3c7-48cc-9dc6-2f88ec1a68984115.png?v=1664440931&amp;width=152"><title>Account | UGREEN US</title>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@---Main-Style---@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<style>
+  .earth-icon {
+      width: 1.5em;
+      height: 1.5em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+  }
+  .ug-current-country {
+      cursor: pointer;
+      color: inherit;
+      font-size: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  }
+  .ug-current-country .ug-current-country-text:hover {
+      color: white;
+  }
+  .ug-current-country-text {
+      margin-left: 8px;
+  }
+  .ug-select-country-dialog {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+  }
+  .ug-select-country-dialog__main {
+      background: white;
+      border-radius: 4px;
+      max-width: 790px;
+      padding: 64px 80px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%;
+      margin-left: -395px;
+  }
+  .ug-select-country-dialog__header__title{
+      font-weight: 600;
+      font-size: 32px;
+      color: #131414;
+      text-align: center;
+  }
+  .ug-select-country-dialog__header__close{
+      position: absolute;
+      top: 25px;
+      right: 25px;
+  }
+  .ug-select-country-dialog__header__close a:hover{
+      color: #000000!important;
+  }
+  .ug-select-country-dialog__body {
+      padding: 30px 0 0 0;
+  }
+  .ug-select-country-dialog__body__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+  }
+  .ug-select-country-dialog__body__list__item {
+      width: 50%;
+      cursor: pointer;
+      padding: 10px;
+
+  }
+  .ug-select-country-dialog__body__list__item.ComingSoon{
+      opacity: .5;
+  } 
+  .ug-select-country-dialog__body__list__item.ComingSoon a{
+      cursor:not-allowed;
+      color: #727273;
+      background: #f4f4f4!important;
+  }
+  .ug-select-country-dialog__main .ug-select-country-dialog__body .ug-select-country-dialog__body__list__item a {
+      width: 100%;
+      height: 60px;
+      color: #727273;
+      padding: 0 20px;
+      font-weight: 500;
+      font-size: 16px;
+      border-radius: 4px;
+      background: #f4f4f4;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+  }
+  .ug-select-country-dialog__body .ug-select-country-dialog__body__list .ug-select-country-dialog__body__list__item a:hover {
+      background: #EAEAEF;
+  }
+  .ug-select-country-dialog__body__list__item__link__name {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      padding-left: 32px;
+      position: relative;
+      font-weight: 400;
+  }
+  .ug-select-country-dialog__body__list__item__link__name .earth-icon{
+      position: absolute;
+      left: 0;
+      top: 0;
+  }
+  .ug-select-country-dialog__body__list__item__link__name .language {
+      color: #999999;
+  }
+  @media screen and (max-width: 768px) {
+      .ug-select-country-dialog__body__list__item {
+          width: 100%;
+      }
+      .ug-select-country-dialog__main{
+          left: 0;
+          margin: 0 24px;
+          padding: 40px 24px;
+          width: calc(100% - 48px);
+      }
+      .ug-select-country-dialog__header__title{
+          font-size: 24px;
+          line-height: 30px;
+      }
+      .ug-select-country-dialog__body{
+          padding: 20px 0 0 0;
+      }
+      .ug-select-country-dialog__body__list__item{
+          padding: 6px 0;
+      }
+.ug-current-country{
+          justify-content: center;
+      }
+  }
+</style>
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <meta name="description" content="Discover the latest in consumer electronics with UGREEN. Browse our collection of chargers, USB hubs, cables, docking stations, adapters, and more."><meta name="keywords" content="Account,UGREEN US,www.ugreen.com"/><meta name="author" content="ugreen"><meta property="og:site_name" content="UGREEN US">
+<meta property="og:url" content="https://www.ugreen.com/account/login">
+<meta property="og:title" content="Account">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Discover the latest in consumer electronics with UGREEN. Browse our collection of chargers, USB hubs, cables, docking stations, adapters, and more."><meta property="og:image" content="http://www.ugreen.com/cdn/shop/files/1200x628.png?v=1665280189"><meta property="og:image:secure_url" content="https://www.ugreen.com/cdn/shop/files/1200x628.png?v=1665280189">
+      <meta property="og:image:width" content="1200"><meta property="og:image:height" content="628"><meta name="twitter:site" content="@#"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Account">
+<meta name="twitter:description" content="Discover the latest in consumer electronics with UGREEN. Browse our collection of chargers, USB hubs, cables, docking stations, adapters, and more.">
+
+
+<meta name="google-site-verification" content="w6O5BXItYzw5kdMBVeUzNYIJ8BvT6DiYBTnwMiTxmvo">
+<meta name="msvalidate.01" content="8C951A20A1CA87A31DD4746536CC0DC6">
+<meta name="google-site-verification" content="lNo0b_U4wWcfYtXUosdmY7LPKRMId9bwNKm9nfxhvQo">
+<meta name="google-site-verification" content="LuA-jZljnU4XZi4uTSfh5_MCFBo1F7EUyW0RCS7sgPA">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/25752469566/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="d1dd6da75d54eedc924c1e915079f6fe">
+<meta id="in-context-paypal-metadata" data-shop-id="25752469566" data-venmo-supported="true" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 120px;
+  }
+}
+</style>
+
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Libre+Baskerville:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap" media="print" onload="this.media='all'">
+<link href="../cdn/shop/t/42/assets/base.min8a16.css?v=51311100950848209801667903383" rel="stylesheet" type="text/css" media="all" />
+
+<style data-shopify>:root {
+        
+         /* CSS Variables */
+        --wrapper-mw      : 1420px;
+        --font-family-1   : Poppins;
+        --font-family-2   : Poppins;
+        --font-family-3   : Libre Baskerville;
+        --font-body-family   : Poppins;
+        --font-heading-family: Poppins;
+       
+        
+        --t4s-success-color       : #428445;
+        --t4s-success-color-rgb   : 66, 132, 69;
+        --t4s-warning-color       : #e0b252;
+        --t4s-warning-color-rgb   : 224, 178, 82;
+        --t4s-error-color         : #EB001B;
+        --t4s-error-color-rgb     : 235, 0, 27;
+        --t4s-light-color         : #ffffff;
+        --t4s-dark-color          : #222222;
+        --t4s-highlight-color     : #ec0101;
+        --t4s-tooltip-background  : #383838;
+        --t4s-tooltip-color       : #fff;
+        --loading-bar-color       : #131414;
+        --primary-sw-color        : #333;
+        --primary-sw-color-rgb    : 51, 51, 51;
+        --border-sw-color         : #ddd;
+        --secondary-sw-color      : #878787;
+        --primary-price-color     : #ec0101;
+        --secondary-price-color   : #878787;
+        
+        --t4s-body-background     : #fff;
+        --text-color              : #878787;
+        --text-color-rgb          : 135, 135, 135;
+        --heading-color           : #222222;
+        --accent-color            : #131414;
+        --accent-color-rgb        : 19, 20, 20;
+        --accent-color-darken     : #000000;
+        --accent-color-hover      : var(--accent-color-darken);
+        --secondary-color         : #222;
+        --secondary-color-rgb     : 34, 34, 34;
+        --link-color              : #8e8e8e;
+        --link-color-hover        : #8e8e8e;
+        --border-color            : #ddd;
+        --border-color-rgb        : 221, 221, 221;
+        --border-primary-color    : #333;
+        --button-background       : #131414;
+        --button-color            : #fff;
+        --button-background-hover : #131414;
+        --button-color-hover      : #fff;
+
+        --sale-badge-background    : #ff4e00;
+        --sale-badge-color         : #fff;
+        --new-badge-background     : #109533;
+        --new-badge-color          : #fff;
+        --preorder-badge-background: #0774d7;
+        --preorder-badge-color     : #fff;
+        --soldout-badge-background : #999999;
+        --soldout-badge-color      : #fff;
+        --custom-badge-background  : #00A500;
+        --custom-badge-color       : #fff;/* Shopify related variables */
+        --payment-terms-background-color: ;
+        
+        --lz-background: #f5f5f5;
+        --lz-img: url("../cdn/shop/t/42/assets/t4s_loadercccb.svg?v=151983654912155615811665219469");}
+
+    html {
+      font-size: 62.5%;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-size:14px;
+      letter-spacing: 0;
+      color: var(--text-color);
+      font-family: var(--font-body-family);
+      line-height: 1.7;
+      font-weight: 400;
+      -webkit-font-smoothing: auto;
+      -moz-osx-font-smoothing: auto;
+    }
+    /*
+    @media screen and (min-width: 750px) {
+      body {
+        font-size: 1.6rem;
+      }
+    }
+    */
+
+    h1, h2, h3, h4, h5, h6, .t4s_as_title {
+      color: var(--heading-color);
+      font-family: var(--font-heading-family);
+      line-height: 1.4;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+    h1 { font-size: 37px }
+    h2 { font-size: 29px }
+    h3 { font-size: 23px }
+    h4 { font-size: 18px }
+    h5 { font-size: 17px }
+    h6 { font-size: 15.5px }
+    a,.t4s_as_link {
+      /* font-family: var(--font-link-family); */
+      color: var(--link-color);
+    }
+    a:hover,.t4s_as_link:hover {
+      color: var(--link-color-hover);
+    }
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      border-color: var(--border-color);
+    }
+    .t4s_as_button,
+    button,
+    input[type="button"]:not(.t4s-btn),
+    input[type="reset"],
+    input[type="submit"]:not(.t4s-btn) {
+      font-family: var(--font-button-family);
+      color: var(--button-color);
+      background-color: var(--button-background);
+      border-color: var(--button-background);
+    }
+    .t4s_as_button:hover,
+    button:hover,
+    input[type="button"]:not(.t4s-btn):hover, 
+    input[type="reset"]:hover,
+    input[type="submit"]:not(.t4s-btn):hover  {
+      color: var(--button-color-hover);
+      background-color: var(--button-background-hover);
+      border-color: var(--button-background-hover);
+    }
+    
+    .t4s-cp,.t4s-color-accent { color : var(--accent-color) }.t4s-ct,.t4s-color-text { color : var(--text-color) }.t4s-ch,.t4ss-color-heading { color : var(--heading-color) }.t4s-csecondary { color : var(--secondary-color ) }
+    
+    .t4s-fnt-fm-1 {
+      font-family: var(--font-family-1) !important;
+    }
+    .t4s-fnt-fm-2 {
+      font-family: var(--font-family-2) !important;
+    }
+    .t4s-fnt-fm-3 {
+      font-family: var(--font-family-3) !important;
+    }
+    .t4s-cr {
+        color: var(--t4s-highlight-color);
+    }
+    .t4s-price__sale { color: var(--primary-price-color); }
+  </style>
+    
+  
+
+    
+    <script src="../../cdn.shopify.com/s/files/1/0257/5246/9566/files/iconfont7eaf.js?v=1676862777" async></script>
+    <link href="../cdn/shop/t/42/assets/theme-newe8df.css?v=81682945332307680721717655269" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="../../cdn.shopify.com/s/files/1/0257/5246/9566/files/swiper-bundle.min_b4c60233-5e07-47dc-800a-583c16079d0bb602.css?v=1655275790">
+
+
+
+</head>
+
+  <body
+    class="template-customers-login "
+    >
+    <a class="skip-to-content-link visually-hidden" href="#MainContent">Skip to content</a>
+    <div class="t4s-close-overlay t4s-op-0"></div>
+
+    <div class="t4s-website-wrapper"><div id="shopify-section-title_config" class="shopify-section t4s-section t4s-section-config t4s-section-admn-fixed">
+
+</div><div id="shopify-section-pr_item_config" class="shopify-section t4s-section t4s-section-config t4s-section-config-product t4s-section-admn-fixed">
+
+
+</div><div id="shopify-section-top-activity-bar" class="shopify-section">
+
+</div><div id="shopify-section-announcement-bar" class="shopify-section t4-section t4s_bk_flickity t4s_tp_cd"><script>try { document.getElementById('shopify-section-announcement-bar').remove() }catch(err) {}</script></div><div id="shopify-section-top-bar" class="shopify-section t4-section t4s_tp_flickity t4s_tp_cd t4s-pr"><style data-shopify>.t4s-top-bar {
+      --tb-color: #131414; --tb-background: #f7f9fa;
+      --tb-border-w:0px; --tb-border: #000000;
+      --tb-color-a-hover: #8e8e8e;
+    }
+    .t4s-top-bar {
+      font-size:12px;
+      background-color: var(--tb-background);
+      border-bottom: var(--tb-border-w) solid var(--tb-border);
+      color:var(--tb-color)
+    }
+    .t4s-top-bar__wrap { padding: 10px 0; min-height:40px; }
+    .t4s-top-bar a { color:var(--tb-color) }
+    .t4s-top-bar .t4s-top-bar-text__item a { color: var(--tb-color-link); }
+    .t4s-top-bar a:hover { color:var(--tb-color-a-hover) }
+    .t4s-top-bar-text__item strong { font-weight: var(--tb-fw-bold); color: var(--tb-color-bold); }
+    .t4s-top-bar-text__item p {margin-bottom:0}
+    .t4s-top-bar .ml__15 { margin-left: 15px; }
+    .rtl_true .t4s-top-bar .ml__15 { margin-left: 0;margin-right: 15px; }
+    .t4s-top-bar__html i {font-size: 16px;vertical-align: middle;}
+    .t4s-top-bar__html svg,.t4s-top-bar__location svg {width: 16px;height: 16px;vertical-align: middle;display: inline-block;}
+	.t4s-top-bar__currencies,.t4s-top-bar__languages{margin-left: 15px;}
+    .t4s-top-bar__currencies button,.t4s-top-bar__languages button{background: transparent;color: var(--tb-color);display: flex;padding: 0;align-items: center;line-height: 20px;font-size: 100%;}
+    .t4s-top-bar__currencies button:hover,.t4s-top-bar__languages button:hover{background: transparent;color: var(--tb-color-a-hover);}
+    .t4s-top-bar__currencies button svg,.t4s-top-bar__languages button svg{width: 8px;margin-left: 5px;}
+    .t4s-top-bar__currencies .t4s-dropdown__wrapper,.t4s-top-bar__languages .t4s-dropdown__wrapper {background: #f6f6f8;padding: 15px;}
+  	.t4s-top-bar__currencies .t4s-drop-arrow, .t4s-top-bar__languages .t4s-drop-arrow {background-color:#f6f6f8;}
+    .t4s-top-bar__currencies button[data-flagst4="md"]:not(:last-child), .t4s-top-bar__languages button[data-flagst4="md"]:not(:last-child){margin-bottom: 7px;}
+	.t4s-top-bar__currencies .t4s-dropdown__wrapper button,.t4s-top-bar__languages .t4s-dropdown__wrapper button {color: var(--text-color);}
+	.t4s-top-bar__currencies .t4s-dropdown__wrapper button.is--selected, .t4s-top-bar__languages .t4s-dropdown__wrapper button.is--selected{color: var(--tb-color-a-hover);}
+    @media (max-width: 767px) {
+      .t4s-top-bar__currencies .t4s-dropdown__wrapper button, .t4s-top-bar__languages .t4s-dropdown__wrapper button {
+          color: var(--text-color);
+          padding: 5px 0;
+      }
+    }
+    @media(min-width:768px){
+		.t4s-top-bar__currencies .t4s-dropdown__wrapper,.t4s-top-bar__languages .t4s-dropdown__wrapper {min-width: 100px;max-width: 300px;width: auto;}
+    }
+    .t4s-top-bar .t4s-countdown-enabled {display: inline-block}</style><div data-topbar-options='{ "isTransparent": false }' id="t4s-top-bar-main" class="t4s-top-bar">
+    <div class="t4s-container">
+       <div class="t4s-row t4s-top-bar__wrap t4s-align-items-center">
+                <div  id="b_a9c0152e-4721-4d4c-bb12-ed75bafd29a2" class="t4s-top-bar__text t4s-col-item t4s-col-12 t4s-text-center t4s-col-lg-12 t4s-text-lg-center "><div class="t4s-top-bar-text__item"><p><strong>Free Shipping </strong>On Orders Over $20</p></div><style data-shopify>.t4s-top-bar {
+                          --tb-fw-bold:700;
+                          --tb-color-link: #222222; --tb-color-bold: #000000;
+                        }</style>
+                </div>
+                <div  id="b_4ccfe19d-5c5b-440f-90ca-67c029f707bb" class="t4s-top-bar__html t4s-col-item t4s-col-12 t4s-text-center t4s-col-lg-12 t4s-text-lg-center "><style>
+    /* 产品详情 捆绑销售titile */
+    .cbb-frequently-bought-title {
+        opacity: 0;
+    }
+
+    /* end */
+    .t4s-top-bar__wrap {
+      position: relative;
+    }
+    .t4s-top-bar__wrap .t4s-top-bar__html {
+      width: 0;
+      padding: 0;
+    }
+    #ug-top-current-country {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      z-index: 10;
+      cursor: pointer;
+      color: inherit;
+      font-size: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background: #e5e5e5;
+    }
+    #ug-top-current-country .ug-current-country-text {
+      margin-left: 8px;
+    }
+    #ug-top-current-country .ug-current-country-text:hover {
+      color: inherit;
+      opacity: 0.5;
+    }
+    @media (max-width: 768px) {
+        #ug-top-current-country {
+          display: none;
+        }
+    }
+</style>
+<div id="ug-top-current-country" class="ug-current-country">
+  <svg t="1701694581671" class="icon" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4110" width="200" height="200"><path d="M75.82 615.61h872.35c5.41-22.75 9.12-45.39 10.92-69.04H64.9c1.8 23.55 5.41 46.29 10.92 69.04z m58.12 138.08h755.12c13.63-21.84 26.36-44.49 36.37-69.04H97.57c10.92 23.64 22.74 47.19 36.37 69.04z m139.08 137.17h477.96c30.86-19.04 59.02-42.68 84.47-69.04h-647c25.45 27.26 53.61 50 84.57 69.04z m477.96-757.82H273.02c-30.86 19.04-59.02 42.69-84.47 69.04h647c-25.55-26.36-53.71-49.9-84.57-69.04z" fill="#FFFFFF" p-id="4111"></path><path d="M97.5 684.65h826.2c9.1-21.84 16.3-45.39 21.8-69.04H75.8c5.4 23.55 12.7 46.29 21.7 69.04z m90.7 138.07h645.7c20-20.94 38.1-44.49 54.4-69.04H133.8c16.3 24.55 34.5 47.3 54.4 69.04zM511.1 960c88 0 169.6-25.45 238.5-69.04h-477C341.5 935.45 423.1 960 511.1 960zM75.8 408.39h870.6c-5.4-23.64-12.7-47.29-21.8-69.04H97.5c-9 22.65-16.3 45.4-21.7 69.04zM64 512c0 11.82 0.9 22.75 1.8 34.57h892.4c0.9-11.82 1.8-22.75 1.8-34.57s-0.9-22.75-1.8-34.57H64.9C64 489.25 64 500.18 64 512z m124.2-310.82c-20 20.94-38.1 44.49-54.4 69.04h753.6c-15.4-24.55-33.6-48.2-54.4-69.04H188.2zM511.1 64c-88 0-169.6 25.45-238.5 69.04h477C680.7 88.55 599.1 64 511.1 64z" fill="#BF0A30" p-id="4112"></path><path d="M64.9 477.43h894.2c-1.8-23.65-5.41-46.39-10.92-69.04H75.82c-5.51 22.75-9.12 45.39-10.92 69.04z m32.67-138.08h827.86c-10.02-24.55-22.75-47.3-36.37-69.04H133.94c-13.63 21.75-25.45 45.4-36.37 69.04z" fill="#FFFFFF" p-id="4113"></path><path d="M512 64C263.9 64 64 264.8 64 512c0 11.82 0.9 23.65 1.8 35.47H512V64z" fill="#002868" p-id="4114"></path><path d="M93.26 357.49c-1.9 1.8-1.9 3.61-3.81 5.41l3.81-5.41z m-7.42 14.53c-1.8 4.51-2.71 10.02-4.51 14.53l4.51-14.53z m21.75 149L94.86 511l-13.63 10.02 4.51-15.43-12.73-10.02h16.33l5.41-15.43 4.51 15.43h16.33l-13.63 10.02 5.63 15.43z m60.02-67.24l-12.73-10.02-13.63 10.02 5.41-15.43-13.63-10.02h16.33l5.41-15.43 4.51 15.43h16.43L163 438.35l4.61 15.43zM164 301.18l4.51 16.33-12.73-10.02-13.63 10.02 5.41-16.33-13.63-9.12h16.33l5.41-15.43 4.51 15.43h16.33L164 301.18z m66.33 219.84L216.71 511l-12.73 10.02 4.51-15.43-12.73-9.92h16.33l4.51-15.43 5.41 15.43h16.33l-13.63 10.02 5.62 15.33z m0.91-153.51l-6.31 4.51 5.41 15.43-13.63-9.12-12.73 9.12 4.51-15.43-5.41-4.51-7.31-5.41h16.33l4.51-15.43 5.41 15.43h16.33l-7.11 5.41z m-6.42-135.37l5.41 15.43-13.63-9.12-12.73 9.12 4.51-15.43-12.63-10.02h16.33l4.51-15.43 5.41 15.43h16.33l-13.51 10.02z m65.44 226.25l-13.63-9.12-12.73 9.12 4.51-15.43-12.73-9.12h16.33l4.51-16.33 5.41 16.33h16.33l-13.63 9.12 5.63 15.43z m-3.61-151.8l4.51 15.43L278.43 312l-13.63 10.02 5.41-15.43-13.63-10.02h16.33l5.41-15.43 4.51 15.43h16.33l-12.51 10.02z m0.9-138.08l5.41 15.43-13.63-10.02-12.73 10.02 4.51-15.43-12.73-10.02h16.33l4.51-15.43 5.41 15.43h16.33l-13.41 10.02z m65.43 352.51L339.35 511l-12.73 10.02 4.51-15.43-12.73-10.02h16.33l4.51-15.43 5.41 15.43h16.43l-13.63 10.02 5.53 15.43z m0.9-153.51l-6.31 4.51 5.41 15.43-13.63-9.12-12.73 9.12 4.51-15.43-5.41-4.51-7.31-5.41h16.33l4.51-15.43 5.41 15.43h16.43l-7.21 5.41z m-6.41-135.37l5.41 15.43-13.63-9.12-12.73 9.12 4.51-15.43-12.73-10.02h16.33l4.51-15.43 5.41 15.43h16.53l-13.61 10.02z m65.43 226.25l-13.63-9.12-12.73 9.12 4.51-15.43-12.72-9.12h16.33l4.51-16.33 5.41 16.33h16.33l-13.63 9.12 5.62 15.43z m-3.61-151.8l4.51 15.43L401.08 312l-13.63 10.02 5.41-15.43-13.63-10.02h16.33l5.41-15.43 4.51 15.43h16.33l-12.52 10.02z m0.91-138.08l5.41 15.43-13.63-10.02-12.73 10.02 4.51-15.43-12.73-10.02h15.43l5.41-15.43 5.41 15.43h16.33l-13.41 10.02z m65.43 352.51L462 511l-12.73 10.02 4.51-15.43-12.72-10.02h16.33l4.51-15.43 5.41 15.43h16.33l-13.63 10.02 5.62 15.43z m0.9-153.51l-6.31 4.51 5.41 15.43-13.63-9.12-12.73 9.12 4.51-15.43-5.41-4.51-7.31-5.41h16.33l4.51-15.43 5.41 15.43h16.33l-7.11 5.41z m-6.31-135.37l5.41 15.43-13.63-9.12-12.73 9.12 4.51-15.43-12.72-10.02h16.33l4.51-15.43 5.41 15.43h16.33l-13.42 10.02z m0-136.38l5.41 15.43L462 101.17l-12.73 10.02 4.51-15.43-12.72-10.02h16.33l4.51-15.43 5.41 15.43h16.33l-13.42 10.02z m-130.87 5.51l13.63 10.02-5.41-15.43 1.8-1.8c-7.31 2.71-13.63 5.41-20.94 8.22l-2.71 8.22 13.63-9.23z" fill="#FFFFFF" p-id="4115"></path><path d="M339.35 206.69l-4.51 15.43h-16.33l12.73 10.02-4.51 15.43 12.73-9.12 13.63 9.12-5.41-15.43 13.63-10.02h-16.33l-5.63-15.43z m0 139.88L334.84 362h-16.33l7.31 5.41 5.41 4.51-4.51 15.43 12.73-9.12 13.63 9.12-5.41-15.43 6.31-4.51 7.31-5.41h-16.33l-5.61-15.43z m5.41 149.1l-5.41-15.43-4.51 15.43h-16.33l12.73 10.02-4.51 15.43 12.73-10.02 13.63 10.02-5.41-15.43 13.63-10.02h-16.55zM216.71 206.69l-4.51 15.43h-16.43l12.73 10.02-4.51 15.43 12.73-9.12 13.63 9.12-5.51-15.43 13.63-10.02h-16.33l-5.43-15.43z m0 139.88L212.2 362h-16.43l7.31 5.41 5.41 4.51-4.51 15.43 12.73-9.12 13.63 9.12-5.41-15.43 6.31-4.51 7.31-5.41h-16.33l-5.51-15.43z m5.41 149.1l-5.41-15.43-4.51 15.43h-16.43l12.73 10.02-4.51 15.43 12.73-10.02 13.63 10.02-5.41-15.43 13.63-10.02h-16.45zM82.74 390.36v-3.81 3.81z m12.32-43.79l-3.81 10.92c0.9-3.61 2.81-6.31 3.81-10.02v-0.9z" fill="#FFFFFF" p-id="4116"></path><path d="M107.59 387.45l-5.41-15.43 6.31-4.51 7.31-5.41H99.47l-4.51-14.53c-0.9 2.71-2.71 6.31-3.61 10.02l-1.8 5.41c-0.9 2.71-1.8 6.31-3.61 9.12l-4.51 14.53v0.9l13.63-10.02 12.53 9.92z m-8.12 108.22l-4.51-15.43-5.51 15.43H73.12l12.73 10.02-4.51 15.43 13.63-10.02 12.73 10.02-5.41-15.43 13.63-10.02H99.47z m301.61-214.53l-5.41 15.43h-16.33l13.63 10.02-5.41 15.43L401.18 312l12.73 10.02-4.51-15.43 12.73-10.02H405.8l-4.72-15.43z m3.7 152.7l-5.41-16.33-4.51 16.33h-16.33l12.72 9.12-4.51 15.43 12.73-9.12 13.63 9.12-5.41-15.43 13.63-9.12h-16.54z m-126.35-152.7l-5.41 15.43h-16.33l13.63 10.02-5.41 15.43L278.53 312l12.73 10.02-4.51-15.43 12.73-10.02h-16.33l-4.72-15.43z m3.61 152.7l-5.41-16.33-4.51 16.33h-16.33l12.73 9.12-4.52 15.43 12.73-9.12 13.63 9.12-5.41-15.43 13.63-9.12h-16.54zM155.79 276.63l-5.41 15.43h-16.33l13.63 9.12-5.41 16.33 13.63-10.02 12.73 10.02-4.51-16.33 12.73-9.12h-16.33l-4.73-15.43z m3.6 151.7l-4.51-15.43-5.41 15.43h-16.33l13.63 10.02-5.41 15.43 13.63-10.02 12.73 10.02-4.51-15.43 12.73-10.02h-16.55zM462 206.69l-4.51 15.43h-16.33l12.73 10.02-4.51 15.43 12.72-9.12 13.63 9.12-5.41-15.43 13.63-10.02h-16.33L462 206.69z m-182.67-63.63l-4.51 15.43h-16.33l12.73 10.02-4.51 15.43 12.73-10.02 13.63 10.02-5.41-15.43 13.63-10.02h-16.33l-5.63-15.43z m122.75 0l-5.41 15.43h-15.53l12.72 10.02-4.51 15.43 12.73-10.02 13.63 10.02-5.41-15.43 13.63-10.02H407.6l-5.52-15.43zM462 70.31l-4.51 15.53h-16.33l12.73 10.02-4.51 15.43 12.72-10.02 13.63 10.02-5.41-15.43 13.63-10.02h-16.33L462 70.31z m0 276.26L457.49 362h-16.33l7.32 5.41 5.41 4.51-4.61 15.53 12.73-9.12 13.63 9.12-5.41-15.43 6.31-4.51 7.32-5.41h-16.33L462 346.57z m5.41 149.1L462 480.24l-4.51 15.43h-16.33l12.73 10.02-4.51 15.43 12.72-10.02 13.63 10.02-5.41-15.43 13.63-10.02h-16.54z" fill="#FFFFFF" p-id="4117"></path></svg>
+  <div class="ug-current-country-text">United States / English</div>
+</div>
+<script src="../../at.alicdn.com/t/c/font_3829374_r341clxba8.js"></script>
+
+                </div></div>
+    </div> 
+  </div><div id="t4s-hsticky__sentinel" class="t4s-op-0 t4s-pe-none t4s-pa t4s-w-100"></div><style>#t4s-hsticky__sentinel {height: 1px;bottom: 0;}</style></div><header id="shopify-section-header-inline" class="shopify-section t4s-section t4s-section-header"><style data-shopify>.t4s-header__wrapper {
+    --h-text-color      : #ffffff;
+    --h-text-color-rgb  : 255, 255, 255;
+    --h-text-color-hover: #8e8e8e;
+    --h-bg-color        : #131414;
+    background-color: var(--h-bg-color);
+  }
+  .t4s-count-box {
+    --h-count-bgcolor: #000000;
+    --h-count-color: #ffffff; 
+  }.t4s-section-header [data-header-height] {
+      min-height: 60px;    
+  }
+  .t4s-header__logo img {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transform: translateZ(0);
+    max-height: inherit;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    perspective: 800px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .t4s-header__logo img[src*=".svg"] {
+    height: 100%;
+  }
+  .t4s-site-nav__icons .t4s-site-nav__icon {
+      padding: 0 4px;
+      display: inline-block;
+      line-height: 1;
+  }
+  .t4s-site-nav__icons svg.t4s-icon {
+      color: var(--h-text-color);
+      line-height: 1;
+      vertical-align: middle;
+      transition: color 0.2s ease-in-out;
+      display: block;
+      width: 20px;
+      height: 20px;
+  }
+  .t4s-site-nav__icons.t4s-use__kalles svg.t4s-icon--account {
+      width: 24px;
+      height: 24px;
+  }
+  .t4s-site-nav__icons.t4s-use__line svg.t4s-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .t4s-site-nav__icon>a:hover svg.t4s-icon {
+      color: var(--h-text-color-hover);
+  }
+  .t4s-site-nav__icon a { 
+    display: inline-block;
+    line-height: 1;
+  }
+  .t4s-site-nav__cart >a,.t4s-push-menu-btn {color: var(--h-text-color)}
+  .t4s-site-nav__cart >a:hover {color: var(--h-text-color-hover)}
+  @media (min-width: 768px) {
+    .t4s-site-nav__icons .t4s-site-nav__icon {
+        padding: 0 8px;
+    }
+  }
+  @media (min-width: 1025px) {
+      .t4s-section-header [data-header-height] {
+         min-height: 60px;    
+      }.t4s-announcement-bar >.t4s-container, .t4s-top-bar >.t4s-container, .t4s-header__wrapper >.t4s-container {
+          max-width: 100%;
+      }
+      .t4s-header-layout_logo_left .t4s-header__logo {
+          margin-left: 10px;
+      }.t4s-nav__ul {
+          margin: 0;padding:0
+      }
+    .t4s-nav__ul>li> a {
+        color: var(--h-text-color);
+        padding: 5px 17.5px;
+        text-transform: none;
+        font-family: var(--font-family-1);
+        font-weight: 400;
+        font-size: 14px;}
+    .t4s-nav__ul>li> a:hover { color: var(--h-text-color-hover) !important}
+    .t4s-header-layout_logo_left .t4s-col-group_btns {
+        min-width: 16.666667%;
+    }
+    .t4s-nav__ul .t4s-icon-select-arrow {
+        position: static;
+        width: 8px;
+        margin-left: 4px;
+        height: 8px;
+        opacity: .8;
+    }
+    .t4s-header-layout_logo_center .t4s-nav__ul>li> a {
+           padding-left: 5px;
+    }
+
+    .t4s-header__wrapper .t4s-col-lg-2{
+      width:auto;
+    }
+    .t4s-section-header .t4s-header-layout_logo_left .t4s-col-group_btns{
+      min-width:unset;
+    }
+    .t4s-nav__ul>li> a{
+      padding-left:15px;
+      padding-right:15px;
+    }
+  }</style><div data-header-options='{ "isTransparent": false,"isSticky": false,"hideScroldown": false }' class="t4s-header__wrapper t4s-pr t4s-header-layout_logo_left ">
+  <div class="t4s-container">
+    <div data-header-height class="t4s-row t4s-gx-15 t4s-gx-md-30 t4s-align-items-center"><div class="t4s-col-md-4 t4s-col-4 t4s-d-lg-none t4s-col-item"><a
+  href="../index.html"
+  data-menu-drawer
+  data-drawer-options='{ "id":"#t4s-menu-drawer" }'
+  class="t4s-push-menu-btn  t4s-lh-1 t4s-d-flex t4s-align-items-center"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="currentColor">
+    <rect width="20" height="1.5"></rect><rect y="6" width="20" height="1.5"></rect><rect y="12" width="20" height="1.5"></rect>
+  </svg>
+</a>
+</div>
+        <div class="t4s-col-lg-2 t4s-col-md-4 t4s-col-4 t4s-text-center t4s-text-lg-start t4s-col-item"><div class=" t4s-header__logo t4s-lh-1"><a class="t4s-d-inline-block" href="../index.html" ><img loading="lazy" class="header__normal-logo t4s-d-none t4s-d-lg-block" src="https://cdn.shopify.com/s/files/1/0257/5246/9566/files/95.svg?v=1663919287" alt="" style="width: 95px">
+	   <img loading="lazy" class="header__sticky-logo t4s-d-none t4s-d-none" src="https://cdn.shopify.com/s/files/1/0257/5246/9566/files/95.svg?v=1663919287" alt="" style="width: 95px">
+	   <img loading="lazy" class="header__mobile-logo t4s-d-lg-none" src="https://cdn.shopify.com/s/files/1/0257/5246/9566/files/95.svg?v=1663919287" alt="" style="width: 110px"></a></div> </div>
+        <div class="t4s-col t4s-d-none t4s-d-lg-block t4s-col-item"><style>
+	.ug-menu-custom {
+        height: auto !important;
+		flex-wrap: nowrap;
+        display:flex;
+        margin-top:10px;
+        margin-left:0px;
+	}
+    .ug-menu-custom .t4s-col-item{
+		margin-top:0px;
+        margin-bottom: 10px;
+	}
+  .t4s-nav__hover_sideup .t4s-nav__ul>li.t4s-menu-item.is-action__hover>.t4s-sub-menu{
+		padding-left:0px;
+	}
+  .ug-menu-custom .type_mn_banner{
+      position:relative !important;
+      left:unset!important;
+    }
+</style>
+
+<nav class="t4s-navigation t4s-text-center t4s-nav__hover_sideup t4s-nav-arrow__false"><ul data-menu-nav id="t4s-nav-ul" class="t4s-nav__ul t4s-d-inline-flex t4s-flex-wrap t4s-align-items-center"><li id="item_3944a4f5-3618-4f4b-9d13-238ddb1b72f2" data-placement="bottom" class="t4s-type__mega menu-width__full t4s-menu-item has--children menu-has__offsets" >
+	         <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="#" target="_self">Products</a>
+	         <div id="content_3944a4f5-3618-4f4b-9d13-238ddb1b72f2" class="t4s-sub-menu t4s-pa t4s-op-0 t4s-pe-none t4s-current-scrollbar">
+	         	<div class="t4s-container" style="width:1100px">
+	             <div class="ug-menu-custom t4s-row t4s-gx-20 t4s-gy-30 t4s-lazy_menu isotopet4s isotopet4s-later" data-id="12" data-isotopet4s-js='{ "itemSelector": ".t4s-sub-column-item", "layoutMode": "packery","gutter": 0 }'><div class="t4s-loading--bg"></div></div>
+	          </div>
+	         </div>
+	      </li><li id="item_90140798-89e3-4cdf-98ac-6b1d30579962" class="t4s-type__simple t4s-menu-item" ><a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="../collections/iphone-charger.html" target="_self">iPhone Charger<span class="t4s_lb_nav t4s-pa t4s-op-0" style="background-color: #ec0101;color: #fff">HOT</span></a></li><li id="item_01924df3-a82c-4cbe-9111-6f2932b314af" data-placement="bottom" class="t4s-type__drop t4s-menu-item has--children menu-has__offsets menu-pos__left" >
+	         <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="../pages/featured-deals.html" target="_self"><i class="Hot"></i>Deals</a><div id="content_01924df3-a82c-4cbe-9111-6f2932b314af" class="t4s-sub-menu t4s-pa t4s-op-0 t4s-pe-none">
+	            <!--<div class="t4s-lazy_menu" data-handle="deals-events"><div class="t4s-loading--bg"></div></div>--><link rel="stylesheet" href="../cdn/shop/t/42/assets/t4s-submenu28c3.css?v=57893181754694547241665219477" media="all"><div class="t4s-menu-item"><a href="../pages/ugreen-us-fathers-day-promotion.html">Sweet Dad Deals</a></div><div class="t4s-menu-item"><a href="../pages/apple-event.html">Accessories for Apple</a></div><div class="t4s-menu-item"><a href="../pages/featured-deals.html">Featured Deal</a></div></div></li><li id="item_31714f26-7c59-442a-9448-54a12206a787" data-placement="bottom" class="t4s-type__mega menu-width__full nav_t4cnt t4s-menu-item has--children menu-has__offsets" >
+	         <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="../index.html" target="_self">New Release<span class="t4s_lb_nav t4s-pa t4s-op-0" style="background-color: #03f2a6;color: #fff">NEW</span></a>
+	         <div id="content_31714f26-7c59-442a-9448-54a12206a787" class="t4s-sub-menu t4s-pa t4s-op-0 t4s-pe-none t4s-current-scrollbar">
+	         	<div class="t4s-container">
+	             <div class="ug-menu-custom t4s-row t4s-gx-20 t4s-gy-0 t4s-lazy_menu isotopet4s isotopet4s-later" data-id="1" data-isotopet4s-js='{ "itemSelector": ".t4s-sub-column-item", "layoutMode": "packery","gutter": 0 }'><div class="t4s-loading--bg"></div></div>
+	          </div>
+	         </div>
+	      </li><li id="item_16e48cac-0fd2-4f57-b570-7d74c3092cdc" data-placement="bottom" class="t4s-type__drop t4s-menu-item has--children menu-has__offsets menu-pos__left" >
+	         <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="#" target="_self">Support</a><div id="content_16e48cac-0fd2-4f57-b570-7d74c3092cdc" class="t4s-sub-menu t4s-pa t4s-op-0 t4s-pe-none">
+	            <!--<div class="t4s-lazy_menu" data-handle="to-our-clients"><div class="t4s-loading--bg"></div></div>--><link rel="stylesheet" href="../cdn/shop/t/42/assets/t4s-submenu28c3.css?v=57893181754694547241665219477" media="all"><div class="t4s-menu-item"><a href="../pages/contact-us.html">Contact Us</a></div><div class="t4s-menu-item"><a href="../pages/student-beans.html">Student Discount</a></div><div class="t4s-menu-item"><a href="../index.html">Order Tracking</a></div><div class="t4s-menu-item"><a href="../pages/shipping-policy.html">Shipping & Delivery</a></div><div class="t4s-menu-item"><a href="../pages/returns.html">Return & Exchange</a></div><div class="t4s-menu-item"><a href="../pages/ugreen-warehouse.html">Ugreen Warehouse</a></div><div class="t4s-menu-item"><a href="../pages/download.html">Download</a></div><div class="t4s-menu-item"><a href="../pages/blogs.html">Blog</a></div></div></li></ul></nav></div>
+        <div class="t4s-col-lg-auto t4s-col-md-4 t4s-col-4 t4s-text-end t4s-col-group_btns t4s-col-item t4s-lh-1"><svg xmlns="http://www.w3.org/2000/svg" class="t4s-d-none">
+		  <symbol id="icon-h-search" viewBox="0 0 18 19" fill="none">
+		    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"></path>
+		  </symbol>
+		  <symbol id="icon-h-account" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+		  	<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+		   </symbol>
+		  <symbol id="icon-h-heart" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+		  	<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+		   </symbol>
+		  <symbol id="icon-h-cart" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+		  <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+		   </symbol>
+		</svg>
+  <!-- <div class="t4s-site-nav__icons t4s-use__kalles is--hover2 t4s-h-cart__design1 t4s-lh-1 t4s-d-inline-flex t4s-align-items-center"><div class="t4s-site-nav__icon t4s-site-nav__search"><a class="t4s-pr" href="../search.html" data-drawer-delay data-drawer-options='{ "id":"#t4s-search-hidden" }'>
+				<svg class="t4s-icon t4s-icon--search" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-search"></use></svg>
+			</a></div><div class="t4s-site-nav__icon t4s-site-nav__account t4s-d-md-inline-block"> -->
+<!--      弹窗形式（但不支持手机端）
+		<a class="t4s-pr" href="/account" data-drawer-delay data-drawer-options='{ "id":"#t4s-login-sidebar" }' >
+			<svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-account"></use></svg>
+      </a> -->
+     <!-- <a class="t4s-pr" href="login4236.html">
+			<svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-account"></use></svg>
+      </a> -->
+    <!-- </div> -->
+    <!--<div class="t4s-site-nav__icon t4s-site-nav__cart">	
+		<a href="../cart.html" data-drawer-delay data-drawer-options='{ "id":"#t4s-mini_cart" }'>
+			<span class="t4s-pr t4s-icon-cart__wrap">
+			  <svg class="t4s-icon t4s-icon--cart" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-cart"></use></svg>
+			  <span data-cart-count class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box">0</span>
+			</span>
+			<span class="t4s-h-cart-totals t4s-dn t4s-truncate">
+				<span class="t4s-h-cart__divider t4s-dn">/</span>
+				<span data-cart-tt-price class="t4s-h-cart__total">$0.00</span>
+			</span>
+      </a>
+    </div>-->
+  <!-- </div> -->
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<!-- ======================================form started=================================================  -->
+  <style> 
+		.t4s-h-cart__design3 .t4s-count-box {
+		    width: 19px;
+		    height: 19px;
+		    line-height: 19px;
+		    position: static;
+		    display: inline-block;
+		}
+		.t4s-h-cart__design2 .t4s-site-nav__icon:last-child,
+		.t4s-h-cart__design3 .t4s-site-nav__icon:last-child,
+		.t4s-h-cart__design4 .t4s-site-nav__icon:last-child,
+		.t4s-h-cart__design5 .t4s-site-nav__icon:last-child {
+		    padding-right: 0;
+		}
+    @media (min-width: 768px) {
+
+	    	.t4s-h-cart__design2 .t4s-site-nav__cart a,
+	    	.t4s-h-cart__design4 .t4s-site-nav__cart a,
+	    	.t4s-h-cart__design5 .t4s-site-nav__cart a {
+		      display: flex;
+			   align-items: center;
+			   justify-content: center;
+	    	}
+	    	.t4s-h-cart__design2 .t4s-h-cart-totals,
+	    	.t4s-h-cart__design4 .t4s-h-cart-totals {
+			    display: block;
+			    margin-left: 15px;
+			}
+			.t4s-h-cart__design4 .t4s-site-nav__cart .t4s-count-box,
+			.t4s-h-cart__design5 .t4s-site-nav__cart .t4s-count-box {
+				display: none
+			}
+			.t4s-h-cart__design4 .t4s-h-cart-totals {
+				margin-left: 7px;
+			}
+			.t4s-h-cart__design5 .t4s-h-cart__divider {
+			    display: inline-block;
+			}
+			.t4s-h-cart__design5 .t4s-h-cart-totals {
+			    display: block;
+			    margin-left: 7px;
+			}
+			
+			.t4s-h-cart__design1 .t4s-site-nav__icon.t4s-site-nav__btnMenu {
+			    padding-right: 0;
+			}
+    }
+    </style></div></div>
+  </div>
+</div></header><main
+        id="MainContent"
+        class="content-for-layout focus-none"
+        role="main"
+        tabindex="-1">
+        <div id="shopify-section-template--14456676941886__heading" class="shopify-section page_section_heading"><link href="../cdn/shop/t/42/assets/heading-templatee04d.css?v=126105471011987435971665219460" rel="stylesheet" type="text/css" media="all" /> 
+<div class="header-banner  lazyloadt4s"   style="--space-padding-dk:50px;--space-padding-mb:50px;--space-mg-dk:50px;--space-mg-mb:50px;--bg-cl:#000000;--op:0.54;--bg_repeat:no-repeat;--bg_size:cover;--bg_pos:center center;">
+<div class="page-head t4s-pr t4s-oh page_bg_img t4s-text-center"> 
+   <div class="t4s-container t4s-pr t4s-z-100"><h1 class="title-head t4s-bl-item t4s-animation-none t4s-text-bl t4s-fnt-fm-inherit t4s-font-italic-false t4s-uppercase-false t4s-hidden-mobile-false t4s-br-mb- t4s-text-shadow-false" id="b_5ceb80b4-7249-43c6-bab2-723276f6f6a2"style="--animation: ;--delay-animation:s;--text-cl:#ffffff;--text-fs:20px;--text-fw:500;--text-lh:20px;--text-ls:0px;--text-mgb:0px;--text-fs-mb:20px;--text-lh-mb:20px;--text-ls-mb:0px;--text-mgb-mb:0px;"> LOGIN
+   </h1></div>
+</div><link href="../cdn/shop/t/42/assets/general-blockb448.css?v=166346267904873963681665219463" rel="stylesheet" type="text/css" media="all" />
+</div></div>
+
+<section id="shopify-section-template--14456676941886__main" class="shopify-section t4s-section t4s-section-customers t4s-container">
+  <link href="../cdn/shop/t/42/assets/customer.min8d4e.css?v=159371163308801651431665219469" rel="stylesheet" type="text/css" media="all" />
+<link href="../cdn/shop/t/42/assets/button-style844c.css?v=32372185086330794481665219460" rel="stylesheet" type="text/css" media="all" />
+<link href="../cdn/shop/t/42/assets/custom-effectf86f.css?v=8803510446862564321665219462" rel="stylesheet" media="print" onload="this.media='all'"><div class="t4s-customer is--login t4s-text-start"><div id="recover">
+       <h2 class="t4s_mb_20">Reset your password</h2>
+       <p>Lost your password? Please enter your email address. You will receive a link to create a new password via email.</p><form method="post" action="https://www.ugreen.com/account/recover" accept-charset="UTF-8"><input type="hidden" name="form_type" value="recover_customer_password" /><input type="hidden" name="utf8" value="✓" /><div class="t4s_field t4s-pr">
+           <input type="email" class="t4s_frm_input t4s_mb_30" 
+             value=""
+             name="email"
+             id="RecoverEmail"
+             autocorrect="off"
+             autocapitalize="off"
+             autocomplete="email"
+             
+             placeholder="Email address"
+           >
+           <label for="RecoverEmail">
+             Email address
+           </label>
+         </div><div class="t4s_field t4s_mb_20">
+           <button class="t4s_btn_submmit t4s-btn t4s-btn-base t4s-btn-full-width t4s-btn-style-default t4s-btn-size-medium t4s-btn-color-custom1 t4s-btn-effect-overlay-run">Reset Password</button>
+         </div>
+         <a class="t4s-d-inline-block" href="#login">Cancel </a></form></div><div id="login">
+          <form style="padding: 15% 5% !important;" class="row g-3 border border-gray shadow-lg p-5 rounded">
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control p-3 " id="inputEmail4">
+            </div>
+            <div class="col-md-12">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control p-3 " id="inputPassword4">
+            </div>
+            <div class="FP-div">
+              <a href="#recover">Forgot your password?</a>
+            </div>
+            
+            <div class="col-12">
+              <button style="width: 100% !important; font-size: 12px;" type="submit" class="btn btn-primary p-3">Sign in</button>
+            </div>
+            <div class="new-user-reg">
+              <a class="t4s-d-inline-block" href="register.html"> New customer? Create your account</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================bootstrap-form========================== -->
+
+    
+
+
+
+
+
+      </main>
+
+<!-- ===============================Footer-Start================================================== -->
+  <footer id="t4s-footer">
+    <section id="shopify-section-footer" class="shopify-section t4s-section t4s-section-footer t4s_tp_cdt t4s-footer">
+            <div class="t4s-section-inner t4s_nt_se_footer t4s_se_footer t4s-container-wrap t4s-footer-has-border t4s-footer-border-in "     style="--bg-color: #000000;--bg-gradient: ;--border-cl: #000000;--mg-top: ;--mg-right: auto;--mg-bottom: ;--mg-left:auto;--pd-top: 75px;--pd-right: ;--pd-bottom: 95px;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: ;--mgtb-left: auto;--pdtb-top: 75px;--pdtb-right: ;--pdtb-bottom: 95px;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: ;--mgmb-left: auto;--pdmb-top: 45px;--pdmb-right: ;--pdmb-bottom: 92px;--pdmb-left: ;">
+              <div class="t4s-container">
+          <div class="t4s-footer-wrap t4s-row is--footer-sticky-false is--footer-collapse-true t4s-gx-md-30 t4s-gy-md-30 t4s-gx-0 t4s-gy-30" style="--heading-fs:16px;--heading-fw:500;--heading-lh:22px;--heading-ls: 0px;--heading-cl:#ffffff;--text-fs:14px;--text-fw:400;--text-cl:#878787;--link-cl:#a4a4a6;--link-hover-cl:#ffffff;--border-cl:#000000;--heading-mgb:12px;--heading-mgbm:20px;">
+          <div class="t4s-custom-col t4s-col-item t4s-col-lg-auto t4s-col-md-6 t4s-col-12 bl-8898f2a5-cefa-4323-b799-3606db2f2b69 ug-footer-item">
+                      <div class="t4s-col-inner t4s-text-md-start t4s-text-start "style="--pd: 0 0 0 0;--pd-mb: 0 0 0 0;">
+                          
+                            <div class="t4s-footer-heading t4s-d-flex t4s-align-items-center t4s-justify-content-between t4s-d-md-block t4s-d-none">
+                                <h3 class="t4s-col-heading t4s-fnt-fm-inherit">Products</h3>
+                            </div><div data-footer-open class="t4s-footer-heading t4s-footer-heading-mobile t4s-d-flex t4s-align-items-center t4s-justify-content-between t4s-d-md-none">
+                            <h3 class="t4s-col-heading t4s-fnt-fm-inherit">Products</h3><span class="t4s-footer-collapse-icon"></span>
+                            </div><div data-footer-content class="t4s-footer-content"><div class="t4s-footer-menu t4s-footer-menu-style1" style="--menu-mgb:px;--menu-mgb-mb:px;">
+                                  <ul class="t4s-footer-linklist"><li>
+                                          <a href="../collections/chargers.html" class="t4s-footer-link " >
+                                          Chargers
+                                          </a>
+                                      </li><li>
+                                          <a href="../collections/power-station.html" class="t4s-footer-link " >
+                                          Power Station
+                                          </a>
+                                      </li><li>
+                                          <a href="../collections/hubs-and-adapters.html" class="t4s-footer-link " >
+                                          Hubs/Adapters
+                                          </a>
+                                      </li><li>
+                                          <a href="../collections/holder-protectors.html" class="t4s-footer-link " >
+                                          Stands &amp; Protectors
+                                          </a>
+                                      </li><li>
+                                          <a href="../collections/cable.html" class="t4s-footer-link " >
+                                          Cables
+                                          </a>
+                                      </li></ul>
+                                  </div></div>
+                      </div>
+                  </div>
+                  <div class="t4s-custom-col t4s-col-item t4s-col-lg-auto t4s-col-md-6 t4s-col-12 bl-16cc28da-fdbf-4890-88c0-e9da1c801c51 ug-footer-item">
+                      <div class="t4s-col-inner t4s-text-md-start t4s-text-start "style="--pd: 0 0 0 0;--pd-mb: 0 0 0 0;">
+                          
+                            <div class="t4s-footer-heading t4s-d-flex t4s-align-items-center t4s-justify-content-between t4s-d-md-block t4s-d-none">
+                                <h3 class="t4s-col-heading t4s-fnt-fm-inherit">About</h3>
+                            </div><div data-footer-open class="t4s-footer-heading t4s-footer-heading-mobile t4s-d-flex t4s-align-items-center t4s-justify-content-between t4s-d-md-none">
+                            <h3 class="t4s-col-heading t4s-fnt-fm-inherit">About</h3><span class="t4s-footer-collapse-icon"></span>
+                            </div><div data-footer-content class="t4s-footer-content"><div class="t4s-footer-menu t4s-footer-menu-style1" style="--menu-mgb:px;--menu-mgb-mb:px;">
+                                  <ul class="t4s-footer-linklist"><li>
+                                          <a href="../pages/about-ugreen.html" class="t4s-footer-link " >
+                                          About Ugreen
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/contact-us.html" class="t4s-footer-link " >
+                                          Contact Us
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/terms-and-conditions.html" class="t4s-footer-link " >
+                                          Terms and Conditions
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/global-privacy-policy.html" class="t4s-footer-link " >
+                                          Global Privacy Policy
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/join-us.html" class="t4s-footer-link " >
+                                          Join Us
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/cookie-notice.html" class="t4s-footer-link " >
+                                          Cookie Notice
+                                          </a>
+                                      </li></ul>
+                                  </div></div>
+                      </div>
+                  </div>
+                  <div class="t4s-custom-col t4s-col-item t4s-col-lg-auto t4s-col-md-6 t4s-col-12 bl-footer-8 ug-footer-item">
+                      <div class="t4s-col-inner t4s-text-md-start t4s-text-start "style="--pd: 5px 0 0 0;--pd-mb: 0 0 0 0;">
+                          
+                            <div class="t4s-footer-heading t4s-d-flex t4s-align-items-center t4s-justify-content-between t4s-d-md-block t4s-d-none">
+                                <h3 class="t4s-col-heading t4s-fnt-fm-inherit">To Our Clients</h3>
+                            </div><div data-footer-open class="t4s-footer-heading t4s-footer-heading-mobile t4s-d-flex t4s-align-items-center t4s-justify-content-between t4s-d-md-none">
+                            <h3 class="t4s-col-heading t4s-fnt-fm-inherit">To Our Clients</h3><span class="t4s-footer-collapse-icon"></span>
+                            </div><div data-footer-content class="t4s-footer-content"><div class="t4s-footer-menu t4s-footer-menu-style1" style="--menu-mgb:px;--menu-mgb-mb:px;">
+                                  <ul class="t4s-footer-linklist"><li>
+                                          <a href="../pages/featured-deals.html" class="t4s-footer-link " >
+                                          Featured Deals
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/student-beans.html" class="t4s-footer-link " >
+                                          Student Discount
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/affiliate.html" class="t4s-footer-link " >
+                                          Affiliate Program
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/wholesale-program.html" class="t4s-footer-link " >
+                                          Wholesale Program
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/dropshipping-program.html" class="t4s-footer-link " >
+                                          Dropshipping Program
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/ugreen-warehouse.html" class="t4s-footer-link " >
+                                          Ugreen Warehouse
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/download.html" class="t4s-footer-link " >
+                                          Download
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/blogs.html" class="t4s-footer-link " >
+                                          Blog
+                                          </a>
+                                      </li></ul>
+                                  </div></div>
+                      </div>
+                  </div>
+                  <div class="t4s-custom-col t4s-col-item t4s-col-lg-auto t4s-col-md-6 t4s-col-12 bl-footer-6 ug-footer-item">
+                      <div class="t4s-col-inner t4s-text-md-start t4s-text-start "style="--pd: 5px 0 0 0;--pd-mb: 0 0 0 0;">
+                          
+                            <div class="t4s-footer-heading t4s-d-flex t4s-align-items-center t4s-justify-content-between t4s-d-md-block t4s-d-none">
+                                <h3 class="t4s-col-heading t4s-fnt-fm-inherit">Service</h3>
+                            </div><div data-footer-open class="t4s-footer-heading t4s-footer-heading-mobile t4s-d-flex t4s-align-items-center t4s-justify-content-between t4s-d-md-none">
+                            <h3 class="t4s-col-heading t4s-fnt-fm-inherit">Service</h3><span class="t4s-footer-collapse-icon"></span>
+                            </div><div data-footer-content class="t4s-footer-content"><div class="t4s-footer-menu t4s-footer-menu-style1" style="--menu-mgb:px;--menu-mgb-mb:px;">
+                                  <ul class="t4s-footer-linklist"><li>
+                                          <a href="../pages/payment.html" class="t4s-footer-link " >
+                                          Payment
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/warranty.html" class="t4s-footer-link " >
+                                          Warranty
+                                          </a>
+                                      </li><li>
+                                          <a href="../apps/17TRACK.html" class="t4s-footer-link " >
+                                          Order Tracking
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/shipping-policy.html" class="t4s-footer-link " >
+                                          Shipping &amp; Delivery
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/returns.html" class="t4s-footer-link " >
+                                          Return &amp; Exchange
+                                          </a>
+                                      </li><li>
+                                          <a href="../pages/about-klarna.html" class="t4s-footer-link " >
+                                          Klarna pay
+                                          </a>
+                                      </li></ul>
+                                  </div></div>
+                      </div>
+                  </div>
+                  <div class="t4s-custom-col t4s-col-item t4s-col-lg-3 t4s-col-md-6 t4s-col-12 bl-f2f882a2-6364-4a10-a61b-6f380ad4b3ba ug-footer-item">
+                      <div class="t4s-col-inner t4s-text-md-start t4s-text-start "style="--pd: 0 0 0 0;--pd-mb: 0 0 0 0;">
+                          
+                            <div class="t4s-footer-heading t4s-d-flex t4s-align-items-center t4s-justify-content-between t4s-d-md-block t4s-d-none">
+                                <h3 class="t4s-col-heading t4s-fnt-fm-inherit">Contact Us</h3>
+                            </div><div data-footer-open class="t4s-footer-heading t4s-footer-heading-mobile t4s-d-flex t4s-align-items-center t4s-justify-content-between t4s-d-md-none">
+                            <h3 class="t4s-col-heading t4s-fnt-fm-inherit">Contact Us</h3><span class="t4s-footer-collapse-icon"></span>
+                            </div><div data-footer-content class="t4s-footer-content">
+          <div class="t4s-footer-raw-html t4s-hidden-mobile-false"style="--animation: ;--delay-animation:s;"><style>
+          .footer_content p {
+              color: #A4A4A6;
+              font-size: 14px;
+              line-height: 20px;
+              padding-left: 24px;
+              background: url('https://cdn.shopify.com/s/files/1/0665/9660/2144/files/chat.svg?v=1690453293')left 2px/16px no-repeat;
+              margin-bottom: 20px;
+          }
+
+          .footer_content p:nth-child(2) {
+              background: url('https://cdn.shopify.com/s/files/1/0665/9660/2144/files/Email.svg?v=1690453293')left 2px/16px no-repeat;
+          }
+
+          .footer_content p a:hover {
+              color: #03F2A6;
+          }
+          </style>
+          <div class="footer_content">
+          <p><a href="javascript:void(0);" style="color: #03F2A6;" id="footer_chat">Website Live Chat</a> <br>Mon-Sun 9AM-6PM(PT)</p>
+          <p><a href="mailto:service@ugreen.com">service@ugreen.com</a></p>
+          </div>
+
+          <script>
+          const footer_chat = document.getElementById('footer_chat');
+          footer_chat.addEventListener('click', () => {
+                const ShopifyChat = document.getElementById('launcher');
+                console.log(ShopifyChat)
+                const btn = ShopifyChat.contentWindow.document.querySelector('button'); // 获取 iframe 内指定 ID 的元素
+                btn.click()
+                })
+          </script></div>
+          <p class="t4s-text-bl t4s-fnt-fm-inherit t4s-font-italic-false t4s-hidden-mobile-false t4s-br-mb-false t4s-text-shadow-false"style="--animation: ;--delay-animation:s;--text-cl:#ffffff;--text-fs:16px;--text-fw:500;--text-lh:0px;--text-ls:0px;--text-mgb:15px;--text-fs-mb:16px;--text-lh-mb:0px;--text-ls-mb:0px;--text-mgb-mb:10px;">We Accept</p>
+          <div class="t4s-payment-footer-svg t4s-pr t4s-hidden-mobile-false" style="--height:35px;--mgb:20px;--mgb-mb:px;"><img class="lazyloadt4s" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="//www.ugreen.com/cdn/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg" alt="visa" /><img class="lazyloadt4s" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="//www.ugreen.com/cdn/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg" alt="paypal" /><img class="lazyloadt4s" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="//www.ugreen.com/cdn/shopifycloud/shopify/assets/payment_icons/maestro-d2055c6b416c46cf134f393e1df6e0ba31722b623870f954afd392092207889c.svg" alt="maestro" /><img class="lazyloadt4s" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="//www.ugreen.com/cdn/shopifycloud/shopify/assets/payment_icons/american_express-12858714bc10cdf384b62b8f41d20f56d8c32c1b8fed98b662f2bfc158dcbcf0.svg" alt="american express" /><img class="lazyloadt4s" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="//www.ugreen.com/cdn/shopifycloud/shopify/assets/payment_icons/discover-cc9808e50193c7496e7a5245eb86d5e06f02e2476c0fe70f2c40016707d35461.svg" alt="discover" /><img class="lazyloadt4s" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="//www.ugreen.com/cdn/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg" alt="apple pay" /><img class="lazyloadt4s" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="//www.ugreen.com/cdn/shopifycloud/shopify/assets/payment_icons/diners_club-16436b9fb6dd9060edb51f1c7c44e23941e544ad798282d6aef1604319562fba.svg" alt="diners club" /><img class="lazyloadt4s" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="//www.ugreen.com/cdn/shopifycloud/shopify/assets/payment_icons/jcb-ab0f5a1739704f1ab039f19ac8c28895af5c39a3f54ee9b748ea051986b0bd36.svg" alt="jcb" /><img class="lazyloadt4s" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="//www.ugreen.com/cdn/shopifycloud/shopify/assets/payment_icons/shopify_pay-957a48d1202dc65a7890b292de764ee886f7e64cea486ae82e291e9dc824c914.svg" alt="shopify pay" /><img class="lazyloadt4s" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="//www.ugreen.com/cdn/shopifycloud/shopify/assets/payment_icons/klarna-389801c6056cb5600b4f05f72ebc2c58e4947688c6c4f5e6ccea41f7973d3a28.svg" alt="klarna" /></div></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="socials-icon-block">
+                  <a class="socials-icon-wrap" href="https://www.facebook.com/UgreenGlobal" target="_blank">
+                      <svg class="socials-icon" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                      </svg>
+                  </a>
+
+                <a class="socials-icon-wrap" href="https://www.tiktok.com/@ugreenofficial" target="_blank">
+                  <svg class="socials-icon" aria-hidden="true">
+                      <use xlink:href="#icon-tiktok"></use>
+                  </svg>
+                </a>
+
+                <a class="socials-icon-wrap" href="https://mobile.twitter.com/ugreenofficial" target="_blank">
+                  <svg class="socials-icon" aria-hidden="true">
+                      <use xlink:href="#icon-twitter"></use>
+                  </svg>
+                </a>
+
+                <a class="socials-icon-wrap" href="https://www.instagram.com/ugreen_official" target="_blank">
+                  <svg class="socials-icon" aria-hidden="true">
+                      <use xlink:href="#icon-ins"></use>
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+    </section>
+    <section id="shopify-section-bottom-bar" class="shopify-section t4s-section t4s-section-footer t4s-section-bottom-bar t4s_tp_cdt t4s-footer">
+    <!-- sections/footer1.liquid -->
+      <link href="../cdn/shop/t/42/assets/section5c48.css?v=171863752573777959621665219460" rel="stylesheet" type="text/css" media="all" />
+      <link href="../cdn/shop/t/42/assets/general-blockb448.css?v=166346267904873963681665219463" rel="stylesheet" type="text/css" media="all" />
+      <link href="../cdn/shop/t/42/assets/newsletterd00a.css?v=129144350637689513681665219463" rel="stylesheet" type="text/css" media="all" />
+      <link href="../cdn/shop/t/42/assets/icon-social833e.css?v=108669388961828869251665219469" rel="stylesheet" type="text/css" media="all" />
+      <link href="../cdn/shop/t/42/assets/footer5814.css?v=12251280971442482431673713547" rel="stylesheet" type="text/css" media="all" />
+      <div class="t4s-section-inner t4s_nt_se_bottom-bar t4s_se_bottom-bar t4s-container-wrap t4s-footer-has-border t4s-footer-border-in "     style="--bg-color: #000000;--bg-gradient: ;--border-cl: #727273;--mg-top: ;--mg-right: auto;--mg-bottom: ;--mg-left:auto;--pd-top: 20px;--pd-right: ;--pd-bottom: 72px;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: ;--mgtb-left: auto;--pdtb-top: 20px;--pdtb-right: ;--pdtb-bottom: 72px;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: ;--mgmb-left: auto;--pdmb-top: 20px;--pdmb-right: ;--pdmb-bottom: 100px;--pdmb-left: ;">
+        <div class="t4s-container ug-bottom-bar">
+          <div class="t4s-footer-wrap t4s-bottom-bar t4s-row is--footer-collapse- t4s-gx-md-0 t4s-gy-md-0 t4s-gx-0 t4s-gy-0" style="--heading-fs:16px;--heading-fw:500;--heading-lh:22px;--heading-ls: 0px;--heading-cl:#222222;--text-fs:14px;--text-fw:400;--text-cl:#878787;--link-cl:#878787;--link-hover-cl:#56cfe1;--border-cl:#727273;--heading-mgb:30px;--heading-mgbm:20px;">
+            <div class="t4s-custom-col t4s-col-item t4s-col-lg-6 t4s-col-md-6 t4s-col-12 bl-2433b4f1-5bdc-49a9-ba42-a51f4eb6d8e3">
+                  <div class="t4s-col-inner t4s-text-md-start t4s-text-center "style="--pd: 0 0 0 0;--pd-mb: 0 0 0 0;">
+                      <div  class="t4s-footer-content">
+                        <div class="t4s-footer-raw-html t4s-hidden-mobile-false"style="--animation: ;--delay-animation:s;">
+                          <div style="display: flex;align-items: center;">
+                            <p style="margin: 0;">Copyright © 2024 America Ugreen Limited</p>
+                            <div style="margin-left: 12px;">
+                              <a href="http://privacy.truste.com/privacy-seal/validation?rid=f1d113c7-877f-49b8-bf65-2e2d58fa17a4" target="_blank">
+                                <img style="border: none;width: 50%;" src="http://privacy-policy.truste.com/privacy-seal/seal?rid=f1d113c7-877f-49b8-bf65-2e2d58fa17a4" alt="TRUSTe">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t4s-custom-col t4s-col-item t4s-col-lg-6 t4s-col-md-6 t4s-col-12 bl-47f5eb4c-1063-495d-bfc4-a54c62d219aa">
+                    <div class="t4s-col-inner t4s-text-md-end t4s-text-end "style="--pd: 0 0 0 0;--pd-mb: 0 0 0 0;">
+                      <div  class="t4s-footer-content">
+                        <div class="t4s-footer-raw-html t4s-hidden-mobile-false"style="--animation: ;--delay-animation:s;">
+                          <div id="ug-current-country" class="ug-current-country">
+                <p style="margin: 0 10px 0 0;font-size: 14px;color: #727273;">Select Your Region:</p>
+                <svg class="earth-icon" aria-hidden="true">
+                    <use xlink:href="#icon-US_icon"></use>
+                </svg>
+                <div class="ug-current-country-text">United States / English</div>
+                          </div>
+                          <div class="ug-select-country-dialog">
+                              <div class="ug-select-country-dialog__main">
+                                  <div class="ug-select-country-dialog__header">
+                                      <div class="ug-select-country-dialog__header__title">Select Your Country/Region</div>
+                                      <div class="ug-select-country-dialog__header__close">
+                                          <a href="javascript:void(0)" class="ug-select-country-dialog__header__close__link">
+                                              <svg class="earth-icon" aria-hidden="true">
+                                                  <use xlink:href="#icon-delete"></use>
+                                              </svg>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="ug-select-country-dialog__body">
+                                      <ul class="ug-select-country-dialog__body__list">
+                                          <li class="ug-select-country-dialog__body__list__item">
+                                              <a href="../index094d.html?SkipCozyRedirect=yes" class="ug-select-country-dialog__body__list__item__link">
+                                                  <div class="ug-select-country-dialog__body__list__item__link__name">
+                                        <svg class="earth-icon" aria-hidden="true">
+                                          <use xlink:href="#icon-US_icon"></use>
+                                        </svg>
+                                                      <span>United States</span>
+                                                      <span class="language">English</span>
+                                                  </div>
+
+                                              </a>
+                                          </li>
+                                          <li class="ug-select-country-dialog__body__list__item">
+                                              <a href="https://eu.ugreen.com/?SkipCozyRedirect=yes" class="ug-select-country-dialog__body__list__item__link">
+                                                  <div class="ug-select-country-dialog__body__list__item__link__name">
+                                        <svg class="earth-icon" aria-hidden="true">
+                                          <use xlink:href="#icon-EU_icon"></use>
+                                        </svg>
+                                                      <span>Europe</span>
+                                                      <span class="language">English</span>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <li class="ug-select-country-dialog__body__list__item">
+                                              <a href="https://ca.ugreen.com/?SkipCozyRedirect=yes" class="ug-select-country-dialog__body__list__item__link">
+                                                  <div class="ug-select-country-dialog__body__list__item__link__name">
+                                        <svg class="earth-icon" aria-hidden="true">
+                                          <use xlink:href="#icon-CA_icon"></use>
+                                        </svg>
+                                                      <span>Canada</span>
+                                                      <span class="language">English</span>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <li class="ug-select-country-dialog__body__list__item">
+                                              <a href="https://de.ugreen.com/?SkipCozyRedirect=yes" class="ug-select-country-dialog__body__list__item__link">
+                                                  <div class="ug-select-country-dialog__body__list__item__link__name">
+                                        <svg class="earth-icon" aria-hidden="true">
+                                          <use xlink:href="#icon-DE_icon"></use>
+                                        </svg>
+                                                      <span>Deutschland</span>
+                                                      <span class="language">Deutsch</span>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <li class="ug-select-country-dialog__body__list__item">
+                                              <a href="https://uk.ugreen.com/?SkipCozyRedirect=yes" class="ug-select-country-dialog__body__list__item__link">
+                                                  <div class="ug-select-country-dialog__body__list__item__link__name">
+                                        <svg class="earth-icon" aria-hidden="true">
+                                          <use xlink:href="#icon-UK_icon"></use>
+                                        </svg>
+                                                      <span>United Kingdom </span>
+                                                      <span class="language">English</span>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <li class="ug-select-country-dialog__body__list__item">
+                                              <a href="https://fr.ugreen.com/?SkipCozyRedirect=yes" class="ug-select-country-dialog__body__list__item__link">
+                                                  <div class="ug-select-country-dialog__body__list__item__link__name">
+                                        <svg class="earth-icon" aria-hidden="true">
+                                          <use xlink:href="#icon-FR_icon"></use>
+                                        </svg>
+                                                      <span>France</span>
+                                                      <span class="language">Français</span>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <li class="ug-select-country-dialog__body__list__item">
+                                              <a href="https://nl.ugreen.com/?SkipCozyRedirect=yes" class="ug-select-country-dialog__body__list__item__link">
+                                                  <div class="ug-select-country-dialog__body__list__item__link__name">
+                                        <svg t="1704693223812" class="earth-icon" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4750" width="200" height="200"><path d="M22.26087 519.034435a489.73913 489.73913 0 1 0 979.47826 0 489.73913 489.73913 0 0 0-979.47826 0z" fill="#F0F0F0" p-id="4751"></path><path d="M512 29.250783c-210.587826 0-390.099478 132.941913-459.286261 319.443478h918.572522C902.010435 162.148174 722.543304 29.250783 512 29.250783z" fill="#D80027" p-id="4752"></path><path d="M512 1008.729043c210.587826 0 390.054957-132.897391 459.286261-319.398956H52.713739c69.186783 186.546087 248.698435 319.398957 459.286261 319.398956z" fill="#0052B4" p-id="4753"></path></svg>
+                                                      <span>Nederland</span>
+                                                      <span class="language">Nederlands</span>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </section>
+  </footer>
+</div>
+
+
+
+    
+  
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      let timer = setTimeout(checkElement, 500);
+      let count = 0;
+      const checkTotalCount = 10;
+
+      function checkElement() {
+          if (document.querySelector('.mb_mega_menu_exist') !== null) {
+              clearTimeout(timer);
+              insertDom()
+          } else {
+              count++;
+              if (count < checkTotalCount) {
+                  timer = setTimeout(checkElement, 500);
+              }
+          }
+      }
+
+      function insertDom() {
+          const elementToMoveList = document.querySelectorAll('.ug-mobile-tab-content');
+          elementToMoveList.forEach(element => {
+              const id = element.getAttribute('data-parent-id')
+              const parent = document.getElementById(id);
+              parent.insertBefore(element, parent.firstChild);
+          });
+      }
+  });
+</script>
+
+
+</div><div id="shopify-section-toolbar_mobile" class="shopify-section t4s-section t4s-toolbar-mobile t4s-section-admn-fixed-"></div><div id="shopify-section-back_top" class="shopify-section t4s-section-admn2-fixed"><style> #shopify-section-back_top #t4s-backToTop {bottom: 80px;} </style></div><div id="shopify-section-slider_config" class="shopify-section t4s-section t4s-section-config t4s_tp_flickity t4s-section-admn-fixed"><style data-shopify>.t4s-flicky-slider.t4s-slider-btn-cl-custom1{
+            --btn-color           : #ffffff;
+            --btn-background      : #ffb100;
+            --btn-border          : #ffb100;
+            --btn-color-hover     : #ffffff;
+            --btn-background-hover: #ff4e00;
+            --btn-border-hover    :; 
+        }
+        .t4s-flicky-slider.t4s-slider-btn-style-outline.t4s-slider-btn-cl-custom1{
+            --btn-color           : #ffb100;
+            --btn-border          : #ffb100;
+            --btn-color-hover     : #ffffff;
+            --btn-background-hover : #ff4e00;
+        }
+        .t4s-flicky-slider.t4s-slider-btn-style-simple.t4s-slider-btn-cl-custom1{
+            --btn-color           : #ffb100;
+            --btn-border          : #ffb100;
+            --btn-color-hover     : #ff4e00;
+            --btn-border-hover    : #ff4e00;
+        }
+        .t4s-flicky-slider.t4s-dots-cl-custom1{
+            --dots-background      : #ffb100;
+            --dots-background2      : #ffffff;
+        }</style></div><div id="t4s-append-component" class="t4s-d-none"></div><template id="t4s-style-popup"><link href="../cdn/shop/t/42/assets/qs-product0dba.css?v=13153999765489943641665219474" rel="stylesheet" type="text/css" media="all" /></template>
+<link rel="stylesheet" href="../cdn/shop/t/42/assets/theme.minb85e.css?v=73910247608270524281665219476" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../cdn/shop/t/42/assets/drawer.mine6b1.css?v=58533354722067265701665219463" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../../cdn.shopify.com/s/files/1/0601/0827/5898/t/32/assets/line-awesome.min1da4.css?v=86766576465918945231657718088" media="print" onload="this.media='all'"><script async src="../../loox.io/widget/VJgOrH2Jd3/loox.1657871911622070b.js?shop=ugreenmall.myshopify.com"></script>
+
+    
+
+
+<div class="smile-shopify-init"
+  data-channel-key="channel_3doRukjfLse8n8FB2RQ5KsH7"
+
+></div>
+
+
+    <input
+      type="hidden"
+      id="656565115116111114101"
+      data-customer-id=""
+      data-customer-email=""
+      data-customer-name=" "><input
+      type="hidden"
+      name="aaaformbuilder_customer_logged_id"
+      value=""
+      id="aaaformbuilder_customer_logged_id">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5RGDJKT"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe>
+  </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script async src="../../loox.io/widget/VJgOrH2Jd3/loox.1657871911622070b.js?shop=ugreenmall.myshopify.com"></script>
+  <style> #shopify-chat {position: required; z-index: 999;} </style>
+<div id="shopify-block-16387799423947206774" class="shopify-block shopify-app-block">
+    <script src="../../cdn.shopify.com/extensions/c592fce7-b0a9-4f5a-9dca-4a87686ce9e9/ecf-contact-form-builder-3/assets/form-builder-helper-v2.js" defer="defer"></script>
+
+
+</div><div id="shopify-block-16156609502398088594" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: omega_multi_pixel --><div class='ot-multi-pixel'></div>
+
+
+
+<script>
+  var arrayFBPixelTrack = [];
+  function otGetMetaAttribute(property) {
+    const metaElement = document.querySelector(
+      `meta[property='omega:${property}']`,
+    );
+    const content = metaElement ? metaElement.getAttribute('content') : null;
+    return content && content !== '' ? content.split(',') : [];
+  }
+
+  var metaCollection = otGetMetaAttribute('collections');
+  var metaProduct = otGetMetaAttribute('product');
+  var metaTag = otGetMetaAttribute('tags');
+  var metaType = otGetMetaAttribute('product_type');
+</script>
+
+
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+      
+      <script>
+        if (! arrayFBPixelTrack.includes(1464198423999733)) {
+          arrayFBPixelTrack.push('1464198423999733');
+
+        }
+      </script>
+    
+
+
+
+
+    
+    
+      <script>
+        var fbPixelData = JSON.parse('{"pixels":[{"id":137955,"pixel_id":1464198423999733,"shop":"ugreenmall.myshopify.com","title":"UGreen像素代码","status":1,"isMaster":1,"is_conversion_api":1,"test_event_code":"","status_synced":0,"first_capi_enabled_at":"2024-04-30 07:01:33","created_at":"2024-04-30 07:01:33","updated_at":"2024-04-30 07:01:33","market_id":null,"mapping_collections":[],"mapping_products":[],"mapping_tags":[],"mapping_types":[]}]}');
+        var pixels =
+          fbPixelData && fbPixelData.pixels.length ? fbPixelData.pixels : [];
+        function arrayContainsMapping(metaMappings, mappings) {
+          mappings = mappings.toString();
+          var isCheckMapping = false;
+          if (mappings.trim().length && metaMappings.length) {
+            for (let i = 0; i < metaMappings.length; i++) {
+              if (
+                metaMappings[i].trim() !== '' &&
+                mappings.includes(metaMappings[i].trim())
+              ) {
+                isCheckMapping = true;
+                break;
+              }
+            }
+          }
+          return isCheckMapping;
+        }
+
+        function checkPixelSelectedPage(pixel) {
+          let checkCollection = arrayContainsMapping(
+            metaCollection,
+            pixel.mapping_collections ?? [],
+          );
+          let checkProduct = arrayContainsMapping(
+            metaProduct,
+            pixel.mapping_products ?? [],
+          );
+          let checkTag = arrayContainsMapping(
+            metaTag,
+            pixel.mapping_tags ?? [],
+          );
+          let checkType = arrayContainsMapping(
+            metaType,
+            pixel.mapping_types ?? [],
+          );
+          if (checkCollection || checkProduct || checkTag || checkType) {
+            return true;
+          }
+          return false;
+        }
+        for (let i = 0; i < pixels.length; i++) {
+          const isPixelExistInArrayTracking =
+            arrayFBPixelTrack.includes(+pixels[i].pixel_id) ||
+            arrayFBPixelTrack.includes(pixels[i].pixel_id) ||
+            arrayFBPixelTrack.includes('' + pixels[i].pixel_id);
+          if (!isPixelExistInArrayTracking) {
+            if (pixels[i].isMaster == 1) {
+              arrayFBPixelTrack.push(`${pixels[i].pixel_id}`);
+            } else if (pixels[i].isMaster == 0 && checkPixelSelectedPage(pixels[i])) {
+              arrayFBPixelTrack.push(`${pixels[i].pixel_id}`);
+            } else if (pixels[i].isMaster == 2 && !checkPixelSelectedPage(pixels[i])) {
+              arrayFBPixelTrack.push(`${pixels[i].pixel_id}`);
+            }
+          }
+        }
+      </script>
+    
+
+
+
+    
+    
+      <script>
+        var omegaFBSettings = [];
+        var omegaFBSettings = {"settings":{"id":69508,"shop":"ugreenmall.myshopify.com","skip_onboarding_fb_ads":0,"accept_permission_fb_ads":1,"content_type_event":1,"step_onboarding":"{\"step_1\": 0, \"step_2\": 0, \"step_3\": 0, \"is_completed\": 0}","show_banner_extension":1,"enable_analytics":1,"use_basecode_fb":1,"is_show_modal_survey":1,"is_show_modal_feedback":1,"last_date_feedback":null,"is_show_banner":1,"feedback_text":null,"feedback_rating":null,"count_open_app":0,"is_show_modal_review":0,"is_show_re_branding":1,"status_show_re_branding":0,"date_timezone_offset":"UTC","group_accept_information_customer":{"isClientIPAddress":true,"isCity":true,"isFirstName":true,"isExternalID":false,"isZipCode":true,"isPhone":true,"isDateOfBirth":false,"isClientUserAgent":true,"isClickIDCookie":false,"isGender":false,"isState":false,"isCountry":true,"isEmail":true,"isBrowserIDCookie":false,"isLastName":true,"isSubscriptionID":true},"capi_track_viewcontent":1,"capi_track_search":1,"capi_track_pageview":1,"capi_track_addtocart":1,"capi_track_checkout":1,"capi_track_purchase":1,"id_pixel_shopify":"0","price":"134.30","maximum_id_conversion_api":1,"enable":1,"plan":3,"active_plan_at":null,"statusFeedback":1,"lastUpdate":"2024-04-30 07:02:18","timeOnline":null,"reasonDisable":null,"reasonOtherDisable":null,"DiscountCode":null,"usePixelFromShopify":null,"PlanShopify":"shopify_plus","updated_theme":0,"status_use_conversion":0,"test_event_code":null,"fb_access_token":null,"include_shippping_cost":0,"use_multi_currency":0,"first_catalog_feed_created_at":null,"is_enable_trigger":0,"is_using_webhook_product_update":0,"is_use_feed":0,"is_use_utm":0,"is_use_catalog":0,"is_save_consent":1,"is_enable_web_pixel":1,"is_using_plan_promote":1,"first_pixel_at":"2024-04-30 07:01:33","is_new_version":1,"utm_tracking":0,"apps_installed":null,"plan_id":null,"is_enable_train_pixel":0,"setup_ads_report":{"version":"2","alreadySetup":false,"is_using_feature":0}},"list_all_custom_events":[]}
+        console.log({omegaFBSettings})
+      </script>
+    
+
+
+<script>
+  console.log('omegaFBpixels:', arrayFBPixelTrack);
+</script>
+<!-- END app snippet --><!--
+  <div id="fb-pixels-preview">
+  <div class="fb-pixels-preview-wrapper">
+  <div class="fb-pixels-preview-background">
+  <img
+  src="https://cdn.shopify.com/extensions/5a27d961-3bf1-43e3-b432-74d32c13676e/omega-facebook-pixel-85/assets/background.png"
+  width="550"
+  height="auto"
+  />
+  </div>
+  <div class="fb-pixels-preview-instruction">
+  <img
+  src="https://cdn.shopify.com/extensions/5a27d961-3bf1-43e3-b432-74d32c13676e/omega-facebook-pixel-85/assets/instruction.png"
+  width="auto"
+  height="auto"
+  />
+  </div>
+  <div class="fb-pixels-preview-close">
+  <img
+  src="https://cdn.shopify.com/extensions/5a27d961-3bf1-43e3-b432-74d32c13676e/omega-facebook-pixel-85/assets/close.png"
+  width="20"
+  height="auto"
+  />
+  </div>
+  <p class="fb-pixels-preview-content">
+  Please <strong>SAVE</strong> to make app work
+  </p>
+  </div>
+  <style>
+  #fb-pixels-preview {
+  position: relative;
+  }
+  .fb-pixels-preview-wrapper {
+  position: fixed;
+  top: 100px;
+  left: 25%;
+  z-index: 1000;
+  }
+  .fb-pixels-preview-background img {
+  width: 550px;
+  }
+  .fb-pixels-preview-instruction img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  }
+  .fb-pixels-preview-content {
+  color: #fff;
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  font-size: 17px;
+  }
+  .fb-pixels-preview-close img {
+  position: absolute;
+  top: -19px;
+  width: 20px;
+  right: -16px;
+  cursor: pointer;
+  }
+  </style>
+  <script>
+
+  if (!window.location.search.includes('oseid=') || typeof Shopify == 'undefined' || !Shopify.designMode) {
+  document.getElementById("fb-pixels-preview").remove();
+  } else {
+  console.log("Preview Loaded");
+  const closePreview = window.localStorage.getItem('closePreviewFB')
+  if(closePreview == 1) {
+  document.getElementById("fb-pixels-preview").remove();
+  }
+  const closeWrapper = document.querySelector(
+  ".fb-pixels-preview-close"
+  );
+  const closeIcon = closeWrapper.querySelector("img");
+  closeIcon.addEventListener("click", function () {
+  document.getElementById("fb-pixels-preview").style.display =
+  "none";
+
+  window.localStorage.setItem('closePreviewFB', 1)
+  });
+  }
+  </script>
+  </div>
+-->
+<script
+  type="text/javascript"
+  src="../../cdn.shopify.com/extensions/5a27d961-3bf1-43e3-b432-74d32c13676e/omega-facebook-pixel-85/assets/facebook-pixel.js"
+  defer
+></script>
+<script
+  type="text/javascript"
+  src="../../cdn.shopify.com/extensions/5a27d961-3bf1-43e3-b432-74d32c13676e/omega-facebook-pixel-85/assets/facebook-pixel-worker.js"
+  defer
+></script>
+
+
+</div><div id="shopify-block-11945366711752539959" class="shopify-block shopify-app-block"><script> var script = document.createElement('script');script.type = 'text/javascript';script.id = 'ze-snippet';script.src = '../../static.zdassets.com/ekr/snippet1b89.js?key=db32e552-f179-4ce3-ad05-3252e5460e21';document.getElementsByTagName('head')[0].appendChild(script); </script>
+
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.ugreen.com/account/login by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jun 2024 12:11:06 GMT -->
+</html>
